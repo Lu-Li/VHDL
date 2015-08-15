@@ -1,0 +1,23 @@
+|fengming
+input => mask~0.OUTPUTSELECT
+input => count~4.OUTPUTSELECT
+input => count~3.OUTPUTSELECT
+input => count~2.OUTPUTSELECT
+input => count~1.OUTPUTSELECT
+input => count~0.OUTPUTSELECT
+clk1kHz => count[4].CLK
+clk1kHz => count[3].CLK
+clk1kHz => count[2].CLK
+clk1kHz => count[1].CLK
+clk1kHz => count[0].CLK
+clk1kHz => mask.CLK
+clk1kHz => output~reg0.CLK
+reset => mask~1.OUTPUTSELECT
+reset => count~9.OUTPUTSELECT
+reset => count~8.OUTPUTSELECT
+reset => count~7.OUTPUTSELECT
+reset => count~6.OUTPUTSELECT
+reset => count~5.OUTPUTSELECT
+output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

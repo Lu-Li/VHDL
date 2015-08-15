@@ -1,0 +1,22 @@
+|mode
+modecontrol => Selector5.IN3
+modecontrol => Selector4.IN3
+modecontrol => Selector3.IN3
+modecontrol => Selector2.IN4
+modecontrol => Selector1.IN4
+modecontrol => next_state~5.OUTPUTSELECT
+modecontrol => next_state~4.OUTPUTSELECT
+modecontrol => next_state~1.OUTPUTSELECT
+modecontrol => next_state~0.OUTPUTSELECT
+modecontrol => Selector0.IN1
+timecontrol => next_state~2.DATAA
+timecontrol => next_state~3.DATAA
+reset => next_state~3.OUTPUTSELECT
+reset => next_state~2.OUTPUTSELECT
+reset => next_state~0.DATAA
+reset => next_state~1.DATAA
+state[0] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+state[1] <= state~1.DB_MAX_OUTPUT_PORT_TYPE
+state[2] <= state~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,11 @@
+Fitter Status : Successful - Tue Nov 05 10:24:21 2013
+Quartus II Version : 9.0 Build 132 02/25/2009 SJ Full Version
+Revision Name : fire
+Top-level Entity Name : fire
+Family : MAX II
+Device : EPM1270T144C5
+Timing Models : Final
+Total logic elements : 13 / 1,270 ( 1 % )
+Total pins : 23 / 116 ( 20 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

@@ -1,0 +1,32 @@
+library ieee;
+use ieee.std_logic_1164.all;
+entity close is
+port(closecontrol,orderclose:in std_logic;  --closecontrol是用户关闭控制信号（BTN4），orderclose是倒计时完毕产生的关闭信号
+     clk1kHz:in std_logic;  --时钟信号，来自时钟信号
+     modecontrol:in std_logic;  --开机信号，当用户按BTN7时开机
+     resetall:buffer std_logic);  --关闭所有模块，输出至所有模块
+end close;
+
+architecture behave of close is
+signal mask:std_logic:='0';  --初始化辅助变量，用于初始化赋值
+begin
+
+process(clk1kHz)
+begin
+if clk1kHz'event and clk1kHz='1' then
+	--初始化赋值
+	if resetall = '0' and mask='0' then
+		resetall<='1'; mask<='1';
+	end if;
+	
+	if modecontrol='1' then
+		resetall<='0';  --开机状态，resetall='0'
+	else 
+		if closecontrol ='1' or orderclose = '1' then
+			resetall<='1';  --关机状态，resetall='1'
+		end if;
+	end if;
+end if;
+end process;
+
+end behave;

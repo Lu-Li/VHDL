@@ -1,0 +1,13 @@
+|div_10
+clk1kHz => tmp[3].CLK
+clk1kHz => tmp[2].CLK
+clk1kHz => tmp[1].CLK
+clk1kHz => tmp[0].CLK
+clk1kHz => clk100Hz~reg0.CLK
+clear => tmp[3].ACLR
+clear => tmp[2].ACLR
+clear => tmp[1].ACLR
+clear => tmp[0].ACLR
+clk100Hz <= clk100Hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

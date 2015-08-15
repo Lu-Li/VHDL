@@ -1,0 +1,255 @@
+Simulator report for shumaguan
+Tue Nov 05 10:02:27 2013
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------+
+; Simulator Summary                           ;
++-----------------------------+---------------+
+; Type                        ; Value         ;
++-----------------------------+---------------+
+; Simulation Start Time       ; 0 ps          ;
+; Simulation End Time         ; 100.0 us      ;
+; Simulation Netlist Size     ; 71 nodes      ;
+; Simulation Coverage         ;      63.77 %  ;
+; Total Number of Transitions ; 3470          ;
+; Simulation Breakpoints      ; 0             ;
+; Family                      ; MAX II        ;
+; Device                      ; EPM1270T144C5 ;
++-----------------------------+---------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      63.77 % ;
+; Total nodes checked                                 ; 71           ;
+; Total output ports checked                          ; 69           ;
+; Total output ports with complete 1/0-value coverage ; 44           ;
+; Total output ports with no 1/0-value coverage       ; 25           ;
+; Total output ports with no 1-value coverage         ; 25           ;
+; Total output ports with no 0-value coverage         ; 25           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                ;
++------------------------------------+------------------------------------+------------------+
+; Node Name                          ; Output Port Name                   ; Output Port Type ;
++------------------------------------+------------------------------------+------------------+
+; |shumaguan|count6:inst2|count[1]   ; |shumaguan|count6:inst2|count[1]   ; regout           ;
+; |shumaguan|select6to1:inst1|Mux4~0 ; |shumaguan|select6to1:inst1|Mux4~0 ; combout          ;
+; |shumaguan|select6to1:inst1|Mux4~1 ; |shumaguan|select6to1:inst1|Mux4~1 ; combout          ;
+; |shumaguan|select6to1:inst1|Mux4~2 ; |shumaguan|select6to1:inst1|Mux4~2 ; combout          ;
+; |shumaguan|select6to1:inst1|Mux4~3 ; |shumaguan|select6to1:inst1|Mux4~3 ; combout          ;
+; |shumaguan|select6to1:inst1|Mux4~4 ; |shumaguan|select6to1:inst1|Mux4~4 ; combout          ;
+; |shumaguan|select6to1:inst1|Mux4~5 ; |shumaguan|select6to1:inst1|Mux4~5 ; combout          ;
+; |shumaguan|inst3[0]~0              ; |shumaguan|inst3[0]~0              ; combout          ;
+; |shumaguan|select6to1:inst1|Mux3~0 ; |shumaguan|select6to1:inst1|Mux3~0 ; combout          ;
+; |shumaguan|select6to1:inst1|Mux3~1 ; |shumaguan|select6to1:inst1|Mux3~1 ; combout          ;
+; |shumaguan|inst3[0]~1              ; |shumaguan|inst3[0]~1              ; combout          ;
+; |shumaguan|select6to1:inst1|Mux2~0 ; |shumaguan|select6to1:inst1|Mux2~0 ; combout          ;
+; |shumaguan|select6to1:inst1|Mux2~1 ; |shumaguan|select6to1:inst1|Mux2~1 ; combout          ;
+; |shumaguan|inst3[1]~3              ; |shumaguan|inst3[1]~3              ; combout          ;
+; |shumaguan|inst3[2]~4              ; |shumaguan|inst3[2]~4              ; combout          ;
+; |shumaguan|select6to1:inst1|Mux1~0 ; |shumaguan|select6to1:inst1|Mux1~0 ; combout          ;
+; |shumaguan|select6to1:inst1|Mux1~1 ; |shumaguan|select6to1:inst1|Mux1~1 ; combout          ;
+; |shumaguan|inst3[2]~5              ; |shumaguan|inst3[2]~5              ; combout          ;
+; |shumaguan|inst3[3]~6              ; |shumaguan|inst3[3]~6              ; combout          ;
+; |shumaguan|select6to1:inst1|Mux0~0 ; |shumaguan|select6to1:inst1|Mux0~0 ; combout          ;
+; |shumaguan|select6to1:inst1|Mux0~1 ; |shumaguan|select6to1:inst1|Mux0~1 ; combout          ;
+; |shumaguan|inst3[3]~7              ; |shumaguan|inst3[3]~7              ; combout          ;
+; |shumaguan|dec7s:inst|Mux0~0       ; |shumaguan|dec7s:inst|Mux0~0       ; combout          ;
+; |shumaguan|dec7s:inst|Mux1~0       ; |shumaguan|dec7s:inst|Mux1~0       ; combout          ;
+; |shumaguan|dec7s:inst|Mux2~0       ; |shumaguan|dec7s:inst|Mux2~0       ; combout          ;
+; |shumaguan|dec7s:inst|Mux3~0       ; |shumaguan|dec7s:inst|Mux3~0       ; combout          ;
+; |shumaguan|dec7s:inst|Mux4~0       ; |shumaguan|dec7s:inst|Mux4~0       ; combout          ;
+; |shumaguan|dec7s:inst|Mux5~0       ; |shumaguan|dec7s:inst|Mux5~0       ; combout          ;
+; |shumaguan|dec7s:inst|Mux6~0       ; |shumaguan|dec7s:inst|Mux6~0       ; combout          ;
+; |shumaguan|no1[0]                  ; |shumaguan|no1[0]~corein           ; combout          ;
+; |shumaguan|clk1kHz                 ; |shumaguan|clk1kHz~corein          ; combout          ;
+; |shumaguan|cat[5]                  ; |shumaguan|cat[5]                  ; padio            ;
+; |shumaguan|cat[4]                  ; |shumaguan|cat[4]                  ; padio            ;
+; |shumaguan|cat[3]                  ; |shumaguan|cat[3]                  ; padio            ;
+; |shumaguan|cat[2]                  ; |shumaguan|cat[2]                  ; padio            ;
+; |shumaguan|cat[1]                  ; |shumaguan|cat[1]                  ; padio            ;
+; |shumaguan|cat[0]                  ; |shumaguan|cat[0]                  ; padio            ;
+; |shumaguan|led7s[6]                ; |shumaguan|led7s[6]                ; padio            ;
+; |shumaguan|led7s[5]                ; |shumaguan|led7s[5]                ; padio            ;
+; |shumaguan|led7s[4]                ; |shumaguan|led7s[4]                ; padio            ;
+; |shumaguan|led7s[3]                ; |shumaguan|led7s[3]                ; padio            ;
+; |shumaguan|led7s[2]                ; |shumaguan|led7s[2]                ; padio            ;
+; |shumaguan|led7s[1]                ; |shumaguan|led7s[1]                ; padio            ;
+; |shumaguan|led7s[0]                ; |shumaguan|led7s[0]                ; padio            ;
++------------------------------------+------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++---------------------------------------------------------------------+
+; Missing 1-Value Coverage                                            ;
++-----------------------+--------------------------+------------------+
+; Node Name             ; Output Port Name         ; Output Port Type ;
++-----------------------+--------------------------+------------------+
+; |shumaguan|inst3[1]~2 ; |shumaguan|inst3[1]~2    ; combout          ;
+; |shumaguan|reset      ; |shumaguan|reset~corein  ; combout          ;
+; |shumaguan|no4[0]     ; |shumaguan|no4[0]~corein ; combout          ;
+; |shumaguan|no3[0]     ; |shumaguan|no3[0]~corein ; combout          ;
+; |shumaguan|no5[0]     ; |shumaguan|no5[0]~corein ; combout          ;
+; |shumaguan|no2[0]     ; |shumaguan|no2[0]~corein ; combout          ;
+; |shumaguan|no6[0]     ; |shumaguan|no6[0]~corein ; combout          ;
+; |shumaguan|no4[1]     ; |shumaguan|no4[1]~corein ; combout          ;
+; |shumaguan|no3[1]     ; |shumaguan|no3[1]~corein ; combout          ;
+; |shumaguan|no2[1]     ; |shumaguan|no2[1]~corein ; combout          ;
+; |shumaguan|no5[1]     ; |shumaguan|no5[1]~corein ; combout          ;
+; |shumaguan|no1[1]     ; |shumaguan|no1[1]~corein ; combout          ;
+; |shumaguan|no6[1]     ; |shumaguan|no6[1]~corein ; combout          ;
+; |shumaguan|no4[2]     ; |shumaguan|no4[2]~corein ; combout          ;
+; |shumaguan|no3[2]     ; |shumaguan|no3[2]~corein ; combout          ;
+; |shumaguan|no5[2]     ; |shumaguan|no5[2]~corein ; combout          ;
+; |shumaguan|no2[2]     ; |shumaguan|no2[2]~corein ; combout          ;
+; |shumaguan|no1[2]     ; |shumaguan|no1[2]~corein ; combout          ;
+; |shumaguan|no6[2]     ; |shumaguan|no6[2]~corein ; combout          ;
+; |shumaguan|no4[3]     ; |shumaguan|no4[3]~corein ; combout          ;
+; |shumaguan|no3[3]     ; |shumaguan|no3[3]~corein ; combout          ;
+; |shumaguan|no5[3]     ; |shumaguan|no5[3]~corein ; combout          ;
+; |shumaguan|no2[3]     ; |shumaguan|no2[3]~corein ; combout          ;
+; |shumaguan|no1[3]     ; |shumaguan|no1[3]~corein ; combout          ;
+; |shumaguan|no6[3]     ; |shumaguan|no6[3]~corein ; combout          ;
++-----------------------+--------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++---------------------------------------------------------------------+
+; Missing 0-Value Coverage                                            ;
++-----------------------+--------------------------+------------------+
+; Node Name             ; Output Port Name         ; Output Port Type ;
++-----------------------+--------------------------+------------------+
+; |shumaguan|inst3[1]~2 ; |shumaguan|inst3[1]~2    ; combout          ;
+; |shumaguan|reset      ; |shumaguan|reset~corein  ; combout          ;
+; |shumaguan|no4[0]     ; |shumaguan|no4[0]~corein ; combout          ;
+; |shumaguan|no3[0]     ; |shumaguan|no3[0]~corein ; combout          ;
+; |shumaguan|no5[0]     ; |shumaguan|no5[0]~corein ; combout          ;
+; |shumaguan|no2[0]     ; |shumaguan|no2[0]~corein ; combout          ;
+; |shumaguan|no6[0]     ; |shumaguan|no6[0]~corein ; combout          ;
+; |shumaguan|no4[1]     ; |shumaguan|no4[1]~corein ; combout          ;
+; |shumaguan|no3[1]     ; |shumaguan|no3[1]~corein ; combout          ;
+; |shumaguan|no2[1]     ; |shumaguan|no2[1]~corein ; combout          ;
+; |shumaguan|no5[1]     ; |shumaguan|no5[1]~corein ; combout          ;
+; |shumaguan|no1[1]     ; |shumaguan|no1[1]~corein ; combout          ;
+; |shumaguan|no6[1]     ; |shumaguan|no6[1]~corein ; combout          ;
+; |shumaguan|no4[2]     ; |shumaguan|no4[2]~corein ; combout          ;
+; |shumaguan|no3[2]     ; |shumaguan|no3[2]~corein ; combout          ;
+; |shumaguan|no5[2]     ; |shumaguan|no5[2]~corein ; combout          ;
+; |shumaguan|no2[2]     ; |shumaguan|no2[2]~corein ; combout          ;
+; |shumaguan|no1[2]     ; |shumaguan|no1[2]~corein ; combout          ;
+; |shumaguan|no6[2]     ; |shumaguan|no6[2]~corein ; combout          ;
+; |shumaguan|no4[3]     ; |shumaguan|no4[3]~corein ; combout          ;
+; |shumaguan|no3[3]     ; |shumaguan|no3[3]~corein ; combout          ;
+; |shumaguan|no5[3]     ; |shumaguan|no5[3]~corein ; combout          ;
+; |shumaguan|no2[3]     ; |shumaguan|no2[3]~corein ; combout          ;
+; |shumaguan|no1[3]     ; |shumaguan|no1[3]~corein ; combout          ;
+; |shumaguan|no6[3]     ; |shumaguan|no6[3]~corein ; combout          ;
++-----------------------+--------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
+    Info: Processing started: Tue Nov 05 10:02:27 2013
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off shumaguan -c shumaguan
+Info: Using vector source file "G:/学习/大三学习资料/大三上/学习资料/数电综合实验/final/shumaguan.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      63.77 %
+Info: Number of transitions in simulation is 3470
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 161 megabytes
+    Info: Processing ended: Tue Nov 05 10:02:27 2013
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

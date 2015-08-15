@@ -1,0 +1,8 @@
+
+State Machine - |ordermode|order:inst|present_state
+Name present_state.s60 present_state.s30 present_state.s10 present_state.s5 present_state.s0 
+present_state.s0 0 0 0 0 0 
+present_state.s5 0 0 0 1 1 
+present_state.s10 0 0 1 0 1 
+present_state.s30 0 1 0 0 1 
+present_state.s60 1 0 0 0 1 

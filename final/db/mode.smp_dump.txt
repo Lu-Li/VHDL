@@ -1,0 +1,9 @@
+
+State Machine - |mode|present_state
+Name present_state.Z present_state.T present_state.B present_state.J present_state.H present_state.C 
+present_state.C 0 0 0 0 0 0 
+present_state.H 0 0 0 0 1 1 
+present_state.J 0 0 0 1 0 1 
+present_state.B 0 0 1 0 0 1 
+present_state.T 0 1 0 0 0 1 
+present_state.Z 1 0 0 0 0 1 

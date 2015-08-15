@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="wave">
+		<CBX_INST_ENTRY INSTANCE_NAME="|wave|ordermode:inst11|decount:inst2|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_uug.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|wave|ordermode:inst11|div:inst3|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_n2m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|wave|ordermode:inst11|decount:inst2|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_uug.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|wave|ordermode:inst11|decount:inst2|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_uug.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|wave|ordermode:inst11|div:inst3|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_pvl.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|wave|ordermode:inst11|div:inst3|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_vnl.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

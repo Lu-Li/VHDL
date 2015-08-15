@@ -1,0 +1,9 @@
+|count6
+clk1kHz => count[2].CLK
+clk1kHz => count[1].CLK
+clk1kHz => count[0].CLK
+count6out[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+count6out[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+count6out[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+
+

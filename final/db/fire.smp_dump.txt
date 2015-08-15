@@ -1,0 +1,8 @@
+
+State Machine - |fire|present_state
+Name present_state.f100 present_state.f600 present_state.f1100 present_state.f1500 present_state.f1900 
+present_state.f1900 0 0 0 0 0 
+present_state.f1500 0 0 0 1 1 
+present_state.f1100 0 0 1 0 1 
+present_state.f600 0 1 0 0 1 
+present_state.f100 1 0 0 0 1 

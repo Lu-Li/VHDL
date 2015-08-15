@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : -5.960 ns
+From           : modecontrol
+To             : fangdou:inst5|inputemp1
+From Clock     : --
+To Clock       : clk50MHz
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 77.228 ns
+From           : ordermode:inst11|decount:inst2|leftimetemp[10]
+To             : led7s[6]
+From Clock     : clk50MHz
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 8.308 ns
+From           : up
+To             : fangdou:inst9|inputemp1
+From Clock     : --
+To Clock       : clk50MHz
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk50MHz'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 23.49 MHz ( period = 42.564 ns )
+From           : fangdou:inst5|inputemp1
+To             : ordermode:inst11|decount:inst2|timecontrol
+From Clock     : clk50MHz
+To Clock       : clk50MHz
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

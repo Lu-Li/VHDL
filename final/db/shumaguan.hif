@@ -1,0 +1,141 @@
+Version 9.0 Build 132 02/25/2009 SJ Full Version
+42
+3112
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+shumaguan
+# storage
+db|shumaguan.(0).cnf
+db|shumaguan.(0).cnf
+# case_insensitive
+# source_file
+shumaguan.bdf
+74692b187b79b1de7a674c6c8f3767ce
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+select6to1
+# storage
+db|shumaguan.(1).cnf
+db|shumaguan.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+select6to1.vhd
+d4221d1d1a5e81ed5cc25acf1a130ca
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+select6to1:inst1
+}
+# lmf
+e:|quartus|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+count6
+# storage
+db|shumaguan.(2).cnf
+db|shumaguan.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+count6.vhd
+a4668d83bd31367c2707b962c685285
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+count6:inst2
+}
+# lmf
+e:|quartus|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+dec7s
+# storage
+db|shumaguan.(3).cnf
+db|shumaguan.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+dec7s.vhd
+dfb6d115167cda6016d5ff1b4c4c80ba
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+dec7s:inst
+}
+# lmf
+e:|quartus|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# complete
+

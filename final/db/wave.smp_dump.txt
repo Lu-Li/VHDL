@@ -1,0 +1,25 @@
+
+State Machine - |wave|fire:inst2|present_state
+Name present_state.f100 present_state.f600 present_state.f1100 present_state.f1500 present_state.f1900 
+present_state.f1900 0 0 0 0 0 
+present_state.f1500 0 0 0 1 1 
+present_state.f1100 0 0 1 0 1 
+present_state.f600 0 1 0 0 1 
+present_state.f100 1 0 0 0 1 
+
+State Machine - |wave|mode:inst1|present_state
+Name present_state.Z present_state.T present_state.B present_state.J present_state.H present_state.C 
+present_state.C 0 0 0 0 0 0 
+present_state.H 0 0 0 0 1 1 
+present_state.J 0 0 0 1 0 1 
+present_state.B 0 0 1 0 0 1 
+present_state.T 0 1 0 0 0 1 
+present_state.Z 1 0 0 0 0 1 
+
+State Machine - |wave|ordermode:inst11|order:inst|present_state
+Name present_state.s60 present_state.s30 present_state.s10 present_state.s5 present_state.s0 
+present_state.s0 0 0 0 0 0 
+present_state.s5 0 0 0 1 1 
+present_state.s10 0 0 1 0 1 
+present_state.s30 0 1 0 0 1 
+present_state.s60 1 0 0 0 1 

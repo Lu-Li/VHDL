@@ -1,0 +1,11 @@
+|count8
+clk1kHz => count[2].CLK
+clk1kHz => count[1].CLK
+clk1kHz => count[0].CLK
+clk1kHz => co~reg0.CLK
+count8out[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+count8out[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+count8out[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+co <= co~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

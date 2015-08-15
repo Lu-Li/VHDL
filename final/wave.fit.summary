@@ -1,0 +1,11 @@
+Fitter Status : Successful - Tue Nov 05 08:46:11 2013
+Quartus II Version : 9.0 Build 132 02/25/2009 SJ Full Version
+Revision Name : wave
+Top-level Entity Name : wave
+Family : MAX II
+Device : EPM1270T144C5
+Timing Models : Final
+Total logic elements : 619 / 1,270 ( 49 % )
+Total pins : 37 / 116 ( 32 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

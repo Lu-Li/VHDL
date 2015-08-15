@@ -1,0 +1,25 @@
+|order
+ordercontrol => Selector4.IN3
+ordercontrol => Selector3.IN3
+ordercontrol => Selector2.IN3
+ordercontrol => Selector1.IN3
+ordercontrol => Selector0.IN3
+ordercontrol => Selector4.IN1
+ordercontrol => Selector3.IN1
+ordercontrol => Selector2.IN1
+ordercontrol => Selector1.IN1
+ordercontrol => Selector0.IN1
+reset => present_state~4.OUTPUTSELECT
+reset => present_state~3.OUTPUTSELECT
+reset => present_state~2.OUTPUTSELECT
+reset => present_state~1.OUTPUTSELECT
+reset => present_state~0.OUTPUTSELECT
+timeset[0] <= output_logic~1.DB_MAX_OUTPUT_PORT_TYPE
+timeset[1] <= timeset~3.DB_MAX_OUTPUT_PORT_TYPE
+timeset[2] <= timeset~2.DB_MAX_OUTPUT_PORT_TYPE
+timeset[3] <= timeset~1.DB_MAX_OUTPUT_PORT_TYPE
+timeset[4] <= timeset~0.DB_MAX_OUTPUT_PORT_TYPE
+timeset[5] <= output_logic~0.DB_MAX_OUTPUT_PORT_TYPE
+timeset[6] <= <GND>
+
+

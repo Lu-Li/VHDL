@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 2.810 ns
+From           : timecontrol
+To             : present_state.B
+From Clock     : --
+To Clock       : clk1kHz
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 12.432 ns
+From           : present_state.B
+To             : state[1]
+From Clock     : clk1kHz
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -1.191 ns
+From           : reset
+To             : present_state.C
+From Clock     : --
+To Clock       : clk1kHz
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk1kHz'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 232.45 MHz ( period = 4.302 ns )
+From           : present_state.Z
+To             : present_state.H
+From Clock     : clk1kHz
+To Clock       : clk1kHz
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

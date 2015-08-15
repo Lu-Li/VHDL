@@ -1,0 +1,8 @@
+|fangdou
+clk100Hz => output~0.IN1
+clk100Hz => inputemp2.CLK
+clk100Hz => inputemp1.CLK
+input => inputemp1.DATAIN
+output <= output~1.DB_MAX_OUTPUT_PORT_TYPE
+
+

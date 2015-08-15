@@ -1,0 +1,37 @@
+|fire
+up => Selector3.IN4
+up => Selector2.IN4
+up => Selector1.IN4
+up => Selector0.IN3
+up => next_state~2.OUTPUTSELECT
+up => next_state~1.OUTPUTSELECT
+up => next_state~0.OUTPUTSELECT
+up => Selector4.IN2
+down => next_state~1.DATAA
+down => next_state~2.DATAA
+down => next_state~0.DATAA
+state[0] => Equal0.IN0
+state[1] => Equal0.IN1
+state[2] => Equal0.IN2
+reset => present_state~4.OUTPUTSELECT
+reset => present_state~3.OUTPUTSELECT
+reset => present_state~2.OUTPUTSELECT
+reset => present_state~1.OUTPUTSELECT
+reset => present_state~0.OUTPUTSELECT
+out1[0] <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+out1[1] <= <GND>
+out1[2] <= <GND>
+out1[3] <= <GND>
+out2[1] <= output_logic~1.DB_MAX_OUTPUT_PORT_TYPE
+out2[2] <= out2~0.DB_MAX_OUTPUT_PORT_TYPE
+out2[3] <= output_logic~0.DB_MAX_OUTPUT_PORT_TYPE
+out3[0] <= <GND>
+out3[1] <= <GND>
+out3[2] <= <GND>
+out3[3] <= <GND>
+out4[0] <= <GND>
+out4[1] <= <GND>
+out4[2] <= <GND>
+out4[3] <= <GND>
+
+

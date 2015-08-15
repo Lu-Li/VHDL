@@ -1,0 +1,26 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+ENTITY count6 IS
+PORT(clk1kHz:IN std_logic;  --时钟输入
+	 count6out:OUT std_logic_vector(2 DOWNTO 0));  --0~5循环六进制显示
+END count6;
+
+architecture behave of count6 is
+signal count:std_logic_vector(2 DOWNTO 0);  --计数信号
+begin
+
+process(clk1kHz)
+begin
+if clk1kHz'event and clk1kHz='1' then
+	if count="101" then
+		count<="000";
+	else count<=count+1;
+	end if;
+end if;
+q<=count;
+end process;
+
+end behave;
+ 

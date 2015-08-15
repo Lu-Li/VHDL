@@ -1,0 +1,28 @@
+library ieee;
+use ieee.std_logic_1164.all;
+entity select8to1 is
+port(count8in:in std_logic_vector(2 downto 0);  --0到7循环计数器输入
+	 s1,s2,s3,s4,s5,s6,s7,s8:in std_logic_vector(7 downto 0);  --字母点阵数据输入
+	 row:out std_logic_vector(7 downto 0);  --行信息输出
+	 col:out std_logic_vector(7 downto 0));  --列信息输出
+end select8to1;
+
+architecture behave of select8to1 is
+begin
+
+process(count8in)
+begin
+case count8in is
+	when "000" =>col<=s8;row<="01111111";
+	when "001" =>col<=s7;row<="10111111";
+	when "010" =>col<=s6;row<="11011111";
+	when "011" =>col<=s5;row<="11101111";
+	when "100" =>col<=s4;row<="11110111";
+	when "101" =>col<=s3;row<="11111011";
+	when "110" =>col<=s2;row<="11111101";
+	when "111" =>col<=s1;row<="11111110";
+end case;
+end process;
+
+end behave;
+    
